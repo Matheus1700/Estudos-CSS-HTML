@@ -1,0 +1,330 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Publica Sans Light;
+    font-size: 14pt;
+    line-height: 23pt;
+    color: rgb(22, 21, 21);
+}
+
+.top-header{
+    z-index: 900;
+    width: 100%;
+    max-width: 1350px;
+    position: fixed;
+    color: white;
+    background-color: rgba(255,65,125,255);
+}
+
+header .container{
+    height: 10vh;
+    width: 100%;
+    left: 5%;
+    padding: 0 1%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header ul{
+    display: flex;
+}
+
+header a{
+    position: relative;
+    padding: 0 5%;
+    right: 100%;
+}
+
+header a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header a:last-child{
+    padding-right: 0;
+}
+
+header div{
+    position: relative;
+}
+
+div.welcome-wrapper{
+    height: 55vh;
+    position: relative;
+    margin: 4% 6% 0 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.welcome-wrapper section{
+    grid-column: 1/3;
+}
+
+div.welcome-wrapper p{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+div.welcome-wrapper button{
+    height: 10%;
+    width: 20vw;
+}
+
+button.btns{
+    transition: 0.3s;
+    padding: 0 3%;
+    border: 0.1px solid rgba(255,65,125,255);;
+    border-radius: 3pt;
+    color: white;
+    background-color: rgba(255,65,125,255);
+}
+
+button.btns:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    border-color: rgba(255,65,125,255);
+    color: rgba(255,65,125,255);
+    background-color: white;
+}
+
+div.welcome-wrapper img{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#title-courses{
+    color: black;
+    text-align: center;
+}
+
+main.main-area{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 2.5cm;
+    row-gap: 1cm;
+    padding: 1% 6% 5% 6%;
+    /*background-color: black;*/
+}
+
+main div.cards{
+    height: 55vh;
+    width: 25vw;
+    min-height: 250px;
+    min-width: 300px;
+    border-radius: 3pt;
+    transition: 0.3s;
+    color: white;
+    background-color: rgba(255,65,125,255);
+}
+
+
+main div.cards:hover{
+    height: 57vh;
+    width: 27vw;
+    cursor: pointer;
+    align-self: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main div.cards header.headers{
+    height: 45%;
+    border-radius: 3pt 3pt 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main div.cards section.desc-sections{
+    height: 55%;
+    padding: 1% 2%;
+    font-size: 0.9rem;
+}
+
+main div.cards section footer{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+#header-1{
+    background-image: url("imgs/violao.jpg");
+}
+
+#header-2{
+    background-image: url("imgs/baixo.jpg");
+}
+
+#header-3{
+    background-image: url("imgs/bateria.jpg");
+}
+
+#header-4{
+    background-image: url("imgs/piano.jpg");
+}
+
+#header-5{
+    background-image: url("imgs/saxofone.jpg");
+}
+
+p.text-price:hover{
+    font-weight: bold;
+}
+
+
+div.form-area{
+    padding: 2% 6%;
+    background-color: rgba(255,65,125,255);
+}
+
+form.form-register{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.2cm;
+    row-gap: 0.3cm;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 3pt;
+    padding: 0.2% 2% 2% 2%;
+    background-color: white;
+}
+
+form h2{
+    grid-column: 1/4;
+}
+
+form input.inputs{
+    height: 5vh;
+    width: auto;
+    padding: 0 1%;
+    border-radius: 3pt;
+    border: 0.1px solid rgba(0, 0, 0, 0.459);
+    color: rgba(31, 31, 31, 0.822);
+}   
+
+form button.btns{
+    grid-column: 1;
+    height: 5vh;
+    width: 15vw;
+}
+
+#input-1{grid-column: 1/3;} #input-2{grid-column: 3/4;} #input-3{grid-column: 1/2;} #input-4{grid-column: 2/4;} #input-5{grid-column: 1/3;}
+
+
+/* Fontes */
+@font-face {
+    font-family: "Publica Sans Light";
+    src: url("fonts/publicasans/PublicaSans-Light.otf");
+}
+
+
+@media (max-width: 1166px){
+    div.welcome-wrapper button{
+        width: 20vw;
+    }
+}
+
+@media (max-width: 1100px){
+    div.welcome-wrapper h1{
+        font-size: 1.2rem;
+    }
+
+    div.welcome-wrapper p{
+        font-size: 0.7rem;
+    }
+
+    div.welcome-wrapper button{
+        width: 20vw;
+    }
+}   
+
+@media (max-width: 932px){
+    div.welcome-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.welcome-wrapper img{
+        order: -1;
+        padding-top: 2%;    
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    div.welcome-wrapper button{
+        height: 6vh;
+        width: 37vw;
+    }
+
+    #title-courses{
+        padding-top: 40%;
+    }
+
+}
+
+@media (max-width: 675px){
+    main div.cards{
+        margin: 0 auto;
+        height: 400px;
+        width: 400px;
+    }
+
+    main h2{
+        font-size: 2.2rem;
+        line-height: 2rem;
+    }
+
+    main p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media (max-width: 832px){
+    form.form-register{
+        width: 90%;
+    }
+
+    form input.inputs{
+        font-size:0.8rem;
+        height: 7vh;
+    }
+
+    #input-1{grid-column: 1/4; grid-row: 2;} #input-2{grid-column: 1/4; grid-row: 3;} #input-3{grid-column: 1/4; grid-row: 4;} #input-4{grid-column: 1/4; grid-row: 5;} #input-5{grid-column: 1/4; grid-row: 6;} #input-6{grid-column: 1/4; grid-row: 7;}
+
+    form button.btns{
+        font-size:0.8rem;
+        width: 40vw;
+    }
+
+}
+
+/* Treta do Top*/
+@media (max-width: 510px){
+    header ul{
+        display: none;
+    }
+}
+
+@media (max-width: 380px){
+    #title-courses{
+        padding-top: 50%;
+    }
+}

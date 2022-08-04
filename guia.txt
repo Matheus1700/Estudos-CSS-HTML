@@ -1,0 +1,32 @@
+header -->
+    + Fixo
+    + Canto Esquerdo: LOGO
+    + Canto Direito: Menu com opções de Links
+
+Div de Introdução ao Site -->
+    + Lado Esquerdo: 
+        - Título Introdutório do Site  
+        - Texto descritivo
+    + Lado Direito: 
+        - Uma imagem relacionada a estudo com uma arte vetorial
+
+Main (.cards) -->
+    + 6 Sections com os cards de cada curso:
+        - Imagem do curso
+        - Animação pra quando passar o mouse sobre a imagem
+        - Aparecer uma transição pra quando vc passar o mouse sobre a imagem
+        uma descrição do curso aparecer
+
+Form --> 
+    + Formulário de Cadastro do Site:
+        - Nome, Data de Nascimento, E-mail, Senha (duas vezes)
+
+Footer --> 
+    + Informações do Site:
+        - Contato
+        - "Made by Me"
+
+
+
+cards
++ 
